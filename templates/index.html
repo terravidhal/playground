@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground</title>
+    <style>
+      * {
+          margin: 0px;
+          padding: 0px;
+      }
+
+      h1{
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      #container {
+          width: 60%;
+          margin: 40px auto;
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          flex-wrap: wrap;
+      }
+
+        .Boxes{
+            border: 2px solid black;
+            border-radius: 5%;
+            height: 200px;
+            width: 200px;
+            margin-top: 10px;
+            background-color: {{Color}};
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome!</h1>
+    <div id="container">
+      {% for x in range (0,num) %}
+      <div class="Boxes"></div>
+      {% endfor %}
+    </div>
+    {# a comment #}
+  </body>
+</html>
